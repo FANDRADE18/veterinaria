@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/banio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".banio">
+
+    <EditText
+        android:id="@+id/editedadmascotabanio"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="EDAD DE LA MASCOTA"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0CB9B5"
+        android:textColorHint="#5D5A5B"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editnommascotabanio" />
+
+    <Button
+        android:id="@+id/btncerarsesion"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="#0CB9B5"
+        android:text="CERRAR SESIÓN"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textusuariobanio" />
+
+    <TextView
+        android:id="@+id/textusuariobanio"
+        android:layout_width="202dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="USUARIO"
+        android:textAlignment="textStart"
+        android:textColor="#0CB9B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textbienvenido" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textbienvenido"
+        app:srcCompat="@drawable/user_96px" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="131dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoveterinaria" />
+
+    <TextView
+        android:id="@+id/textbienvenido"
+        android:layout_width="202dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:text="BIENVENIDO"
+        android:textAlignment="center"
+        android:textColor="#5D5A5B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="#0CB9B5"
+        android:text="REGRESAR"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textusuariobanio" />
+
+    <EditText
+        android:id="@+id/editnommascotabanio"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="132dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="NOMBRE DE LA MASCOTA"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0CB9B5"
+        android:textColorHint="#5D5A5B"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnregresar" />
+
+    <EditText
+        android:id="@+id/editrazamascotabanio"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="RAZA DE LA MASCOTA"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0CB9B5"
+        android:textColorHint="#5D5A5B"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnregresar" />
+
+    <Button
+        android:id="@+id/btnenviarsolicitudbanio"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="56dp"
+        android:background="#5D5A5B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="ENVIAR SOLICITUD"
+        android:textColor="#0CB9B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editedadmascotabanio"
+        app:layout_constraintVertical_bias="0.075" />
+</androidx.constraintlayout.widget.ConstraintLayout>

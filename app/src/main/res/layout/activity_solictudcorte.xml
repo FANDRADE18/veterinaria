@@ -2,19 +2,34 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/inicio"
+    android:id="@+id/solicitudcorte"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".inicio">
+    tools:context=".solictudcorte">
+    <TextView
+        android:id="@+id/textversolicitud"
+        android:layout_width="353dp"
+        android:layout_height="351dp"
+        android:background="@drawable/shape"
+        android:text="INFORMACION DE LA SOLICITUD"
+        android:textAlignment="center"
+        android:textColor="#5D5A5B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
 
     <Button
-        android:id="@+id/btncorte"
-        android:layout_width="200dp"
+        android:id="@+id/btncerarsesion"
+        android:layout_width="189dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:background="#0CB9B5"
-        android:text="CORTE"
+        android:text="CERRAR SESIÓN"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -74,15 +89,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnbanio"
-        android:layout_width="210dp"
+        android:id="@+id/btnregresar"
+        android:layout_width="176dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:background="#0CB9B5"
-        android:text="BAÑO"
+        android:text="REGRESAR"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textusuariobanio" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

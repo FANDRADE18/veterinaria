@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import android.os.Bundle;
-
 
 public class MainActivity extends AppCompatActivity {
  EditText user;
@@ -20,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        iniciarsesion = (Button)findViewById(R.id.btniniciar);
+        iniciarsesion = (Button)findViewById(R.id.btniniciarsesion);
         user= (EditText)findViewById(R.id.edituser);
 
         iniciarsesion.setOnClickListener(new View.OnClickListener() {
