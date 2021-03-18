@@ -13,11 +13,32 @@ import android.os.Bundle;
 
 
 public class MainActivity extends AppCompatActivity {
- EditText user,pass;
+ EditText user;
+ Button iniciarsesion;
+ SharedPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        iniciarsesion = (Button)findViewById(R.id.btniniciar);
+        user= (EditText)findViewById(R.id.edituser);
 
+        iniciarsesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),inicio.class);
+                GuardarCredenciales(user.getText().toString());
+                startActivity(i);
+            }
+        });
     }
+
+    private void GuardarCredenciales(String nombre) {
+        preferences=getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor= preferences.edit();
+        editor.putString("user",nombre);
+        editor.commit();
+
+
+}
 }
